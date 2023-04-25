@@ -15,6 +15,8 @@
 3355
 <c:forEach var="dto" items="${list }">
 ${dto.t_name } | 
+
+오라ㅏ라라라라랄
 </c:forEach>
 </body>
 </html>
