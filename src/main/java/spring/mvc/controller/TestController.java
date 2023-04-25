@@ -16,6 +16,11 @@ public class TestController {
 	@Autowired
 	TestService service;
 
+	@GetMapping("/")
+	public String root() {
+		return "redirect:test";
+	}
+	
 	@GetMapping("/test")
 	public String test(Model model) {
 		
