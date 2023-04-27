@@ -17,17 +17,37 @@ public class TestController {
 	TestService service;
 
 	@GetMapping("/")
-	public String root() {
-		return "redirect:test";
+	public String start()
+	{
+		
+		return "/layout/main";
 	}
 	
-	@GetMapping("/test")
-	public String test(Model model) {
+
+	@GetMapping("/main")
+	public String main()
+	{
 		
-		List<TestDto> list=service.selectData();
-		
-		model.addAttribute("list", list);
+		return "/layout/main";
+	}
+	
+	
+
+	@GetMapping("/hi")
+	public String text()
+	{
 		
 		return "/test/hi";
 	}
+	
+	
+	/*
+	 * @GetMapping("/test") public String test(Model model) {
+	 * 
+	 * List<TestDto> list=service.selectData();
+	 * 
+	 * model.addAttribute("list", list);
+	 * 
+	 * return "/test/hi"; }
+	 */
 }
