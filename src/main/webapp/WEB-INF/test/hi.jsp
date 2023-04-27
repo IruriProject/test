@@ -12,9 +12,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-33557
-<c:forEach var="dto" items="${list }">
-${dto.t_name } | 
-</c:forEach>
+<div style="padding: 10px; text-align:center;">
+<h2>테스트 페이지 이동입니다.</h2>
+3355
+</div>
 </body>
 </html>
