@@ -12,17 +12,24 @@ import spring.mvc.service.TestService;
 
 @Controller
 public class TestController {
-	
+
 	@Autowired
 	TestService service;
 
 	@GetMapping("/test")
 	public String test(Model model) {
-		
-		List<TestDto> list=service.selectData();
-		
+
+		List<TestDto> list = service.selectData();
+
 		model.addAttribute("list", list);
-		
+
 		return "/test/hi";
 	}
+
+	@GetMapping("/")
+	public String start() {
+
+		return "/layout/main";
+	}
+
 }
