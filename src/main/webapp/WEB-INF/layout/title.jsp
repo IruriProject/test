@@ -1,12 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>       
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Gamja+Flower&family=Single+Day&family=Jua&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link
+	href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Gamja+Flower&family=Single+Day&family=Jua&family=Nanum+Pen+Script&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <title>이루리</title>
 <style type="text/css">
@@ -14,7 +18,7 @@
 	float: left;
 	width: 300px;
 	height: 100%;
-	padding: 3px 10px 10px 130px;
+	padding: 10px 10px 10px 130px;
 }
 
 .logo a {
@@ -30,10 +34,10 @@
 
 .search {
 	float: left;
-	width: 500px;
+	width: 600px;
 	height: 100%;
 	padding: 20px;
-	margin: 0 auto;
+	margin: 8px auto;
 	position: relative;
 	text-align: center;
 }
@@ -54,7 +58,9 @@
 	margin: 0;
 }
 
-.searchipput:focus {outline: 1.5px solid #4E9F3D;}
+.searchipput:focus {
+	outline: 1.5px solid #4E9F3D;
+}
 
 .usernav {
 	float: right;
@@ -63,34 +69,34 @@
 	padding: 50px 30px 30px 0px;
 }
 
-.usernav a{
-	text-align:center;
-	color:gray;
-	font-size:14px;
+.usernav a {
+	text-align: center;
+	color: gray;
+	font-size: 15px;
 }
 
-.usernav a:hover{
-	text-align:center;
-	text-decoration:none;
-	color:#000;
+.usernav a:hover {
+	text-align: center;
+	text-decoration: none;
+	color: #000;
 }
-
 </style>
 </head>
-<c:set var="root" value="<%=request.getContextPath() %>"/>
+<c:set var="root" value="<%=request.getContextPath()%>" />
 <body>
-<div class="logo">
-<!-- <a href="main"><h1 style="color:#4E9F3D; font-size:36px;">이루리</h1></a> -->
-<a href="${root }"><img src="${root }/image/logo.jpg" style="width:170px;"></a>
-</div>
-<div class="search">
-      <i class="glyphicon glyphicon-search" id="searchcon" style="color:#41644a;"></i>
-      <input class="searchipput"type="text">
-</div>
+	<div class="logo">
+		<!-- <a href="main"><h1 style="color:#4E9F3D; font-size:36px;">이루리</h1></a> -->
+		<a href="${root }"><img src="${root }/image/logo.jpg"
+			style="width: 170px;"></a>
+	</div>
+	<div class="search">
+		<i class="glyphicon glyphicon-search" id="searchcon"
+			style="color: #41644a;"></i> <input class="searchipput" type="text">
+	</div>
 
-<div class="usernav">
-<a href="#">로그인</a> | <a href="#">회원가입</a>
-<span class="glyphicon glyphicon-envelope" style="padding:0 10px;"></span>
-</div>
+	<div class="usernav">
+		<a href="#">로그인</a> | <a href="#">회원가입</a> <span
+			class="glyphicon glyphicon-envelope" style="padding: 0 10px; font-size: 1.1em;"></span>
+	</div>
 </body>
 </html>
