@@ -12,11 +12,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div style="padding: 10px; text-align:center;">
+<h2>테스트 페이지 이동입니다.</h2>
 3355
 <c:forEach var="dto" items="${list }">
 ${dto.t_name } | 
 
-오라ㅏ라라라라랄
+
 </c:forEach>
 </body>
 </html>

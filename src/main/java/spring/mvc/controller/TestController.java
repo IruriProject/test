@@ -16,13 +16,38 @@ public class TestController {
 	@Autowired
 	TestService service;
 
-	@GetMapping("/test")
-	public String test(Model model) {
+	@GetMapping("/")
+	public String start()
+	{
 		
-		List<TestDto> list=service.selectData();
+		return "/layout/main";
+	}
+	
+
+	@GetMapping("/main")
+	public String main()
+	{
 		
-		model.addAttribute("list", list);
+		return "/layout/main";
+	}
+	
+	
+
+	@GetMapping("/hi")
+	public String text()
+	{
 		
 		return "/test/hi";
 	}
+	
+	
+	/*
+	 * @GetMapping("/test") public String test(Model model) {
+	 * 
+	 * List<TestDto> list=service.selectData();
+	 * 
+	 * model.addAttribute("list", list);
+	 * 
+	 * return "/test/hi"; }
+	 */
 }
